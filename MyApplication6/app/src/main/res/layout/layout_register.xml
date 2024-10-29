@@ -20,11 +20,17 @@
         style="@style/loginHeader"
         android:text="Register"
         android:layout_marginTop="@dimen/loginViewsMargin"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your name"
+        android:alpha="0.7"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputName"
-        style="@style/parent"
-        android:layout_marginTop="@dimen/loginViewsMargin">
+        style="@style/parent">
 
         <EditText
             android:id="@+id/editTextName"
@@ -33,11 +39,17 @@
             android:inputType="textPersonName"
             android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone number"
+        android:alpha="0.7"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputMobile"
-        style="@style/parent"
-        android:layout_marginTop="@dimen/loginViewsMargin">
+        style="@style/parent">
 
         <EditText
             android:id="@+id/editTextMobile"
@@ -46,11 +58,17 @@
             android:inputType="phone"
             android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:alpha="0.7"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputEmail"
-        style="@style/parent"
-        android:layout_marginTop="@dimen/loginViewsMargin">
+        style="@style/parent">
 
         <EditText
             android:id="@+id/editTextEmail"
@@ -59,16 +77,39 @@
             android:inputType="textEmailAddress"
             android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:alpha="0.7"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputPassword"
-        style="@style/parent"
-        android:layout_marginTop="@dimen/loginViewsMargin">
+        style="@style/parent">
 
         <EditText
             android:id="@+id/editTextPassword"
             style="@style/modifiedEditText"
             android:hint="@string/login_password_hint"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm password"
+        android:alpha="0.7"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textConfirmPass"
+        style="@style/parent">
+
+        <EditText
+            android:id="@+id/editConfirmPass"
+            style="@style/modifiedEditText"
+            android:hint="Confirm password"
             android:inputType="textPassword"
             android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>
